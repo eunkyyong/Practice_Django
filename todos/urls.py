@@ -6,6 +6,9 @@ app_name = 'todos'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    # todos/
     path('create_todo/', views.create_todo, name='create_todo'),
-    path('<work>/', views.detail, name='detail'),
+    #todos/create_todo/
+    path('<int:todo_pk>/', views.detail, name='detail'),
+    #todos/.../
 ]

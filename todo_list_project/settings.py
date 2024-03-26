@@ -59,6 +59,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
+        # 모든 app을 하나의 pool에 넣어둔다
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
